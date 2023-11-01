@@ -1,0 +1,121 @@
+/* General Styles */
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 30px;
+  height: auto; 
+  margin-right: 10px;
+}
+
+.back-button img {
+  width: 30px; 
+  height: auto; 
+  margin-right: 5px;
+}
+.account-name {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+/* Form Styles */
+.transfer-form {
+  margin-top: 20px;
+}
+
+.account-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.info-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  margin-bottom: 10px;
+}
+
+.input-label {
+  font-weight: bold;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.value-info {
+  margin-top: 10px;
+}
+
+.btn-success {
+  font-size: 1.3rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+/* Back Button Styles */
+.back-button {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 900px) {
+  .container {
+    width: 90%;
+    height: auto;
+    max-height: 100%;
+  }
+
+  .info-group {
+    flex-direction: column;
+  }
+
+  .value-info {
+    margin-top: 10px;
+  }
+}

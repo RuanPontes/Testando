@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-md navbar-light bg-transparent">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="assets/icons/Design_sem_nome__2_-removebg-preview.png" alt="Seu Logo" class="logo-img">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <div>
+          
+          <button class="btn" (click)="authService.getIsAuthenticated() ? logout() : goToLogin()">
+              {{ authService.getIsAuthenticated() ? 'Logout' : 'Login' }}
+          </button>
+      </div>
+      
+      
+      
+
+        <!-- HTML !-->
+      </ul>
+    </div>
+  </div>
+</nav>

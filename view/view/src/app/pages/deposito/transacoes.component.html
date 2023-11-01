@@ -1,0 +1,13 @@
+<div class="transaction-container">
+    <div class="transaction-card">
+    <div class="transaction-card">
+      <h2>Depósito</h2>
+      <form [formGroup]="formDeposito" (ngSubmit)="realizarDeposito()">
+        <input type="text" formControlName="agencia" placeholder="Agência" class="transaction-input">
+        <input type="text" formControlName="numeroConta" placeholder="Número da Conta" class="transaction-input">
+        <input type="number" formControlName="valor" placeholder="Valor do depósito" class="transaction-input">
+        <button type="submit" class="transaction-button">Realizar Depósito</button>
+      </form>
+    </div>
+  </div>
+  

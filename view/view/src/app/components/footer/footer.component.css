@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+
+/* Estilos básicos */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+}
+
+/* Rodapé */
+.footer {
+  
+  color: #000000;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  margin-top: auto; 
+}
+
+.footer-logo img {
+  width: 100px;
+  height: auto;
+}
+
+/* Links no rodapé */
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Informações de contato no rodapé */
+.footer-contact {
+  text-align: right;
+}
+
+.footer-contact p {
+  margin: 0;
+  direction: rtl;
+}
+
+/* Ícones sociais */
+.social-icons {
+  display: flex;
+  align-items: center; /* Alinhamento verticalmente no centro */
+}
+
+.social-icons a {
+  margin-right: 10px;
+  margin-left: 165px;
+  font-size: 24px;
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.social-icons a:last-child {
+  margin-right: 0;
+}

@@ -1,0 +1,22 @@
+
+
+/* Estilos para largura de tela grande */
+@media screen and (min-width: 768px) {
+  body {
+    background-color: #e0e0e0;
+  }
+}
+
+/* Estilos para largura de tela média */
+@media screen and (max-width: 767px) {
+  body {
+    background-color: #d0d0d0;
+  }
+}
+
+/* Estilos para largura de tela pequena */
+@media screen and (max-width: 576px) {
+  body {
+    background-color: #c0c0c0;
+  }
+}

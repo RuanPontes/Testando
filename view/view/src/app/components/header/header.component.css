@@ -1,0 +1,162 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+/* navbar.component.scss */
+
+/* Estilizando o botão de toggle do menu responsivo */
+.navbar-toggler {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .navbar-toggler-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: url("/view/view/src/assets/icons/Design\ sem\ nome.png");
+  }
+  
+  /* Estilizando os links da navbar */
+  .navbar-nav {
+    .nav-item {
+      margin-left: 1rem;
+  
+      .nav-link {
+        color: #333;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: color 0.3s ease-in-out;
+  
+        &:hover,
+        &.active {
+          color: #007bff;
+        }
+      }
+    }
+  }
+  
+  /* Estilizando a navbar */
+  .navbar {
+    background: transparent;
+    padding: 1rem 0;
+    min-height: 30px; /* Defina a altura desejada para a navbar */
+    max-height: 120px;
+  
+    .navbar-brand {
+      color: #007bff;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      transition: color 0.3s ease-in-out;
+  
+      &:hover {
+        color: #0056b3;
+      }
+    }
+  }
+  
+.logo-img {
+  width: 150px; /* Defina a largura desejada */
+  height: auto; /* Deixe a altura ser ajustada automaticamente */
+}
+
+
+.btn{
+  position: absolute;
+  top: 15%; 
+  right: 20px; 
+  display: inline-block;
+  padding: 12px 20px;
+  color: #13294b;
+  text-decoration: none;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 700;
+  margin-top: 20px;
+  transition: .5s;
+  overflow: hidden;
+}
+.btn:hover{
+  background:  #a4c6e7;
+  border-radius: 5px;
+  color: #172031;
+}
+.btn span{
+  position: absolute;
+  display: block;
+}
+.btn span:nth-child(1){
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: btn1 1s linear infinite;
+}
+@keyframes btn1{
+  0%{
+      left: -100%;
+  }
+  50%,
+  100%{
+      left: 100%;
+  }
+}
+.btn span:nth-child(2){
+  top: -100%;
+  right: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: btn2 1s linear infinite;
+  animation-delay: .20s;
+}
+@keyframes btn2{
+  0%{
+      top: -100%;
+  }
+  50%,
+  100%{
+      top: 100%;
+  }
+}
+.btn span:nth-child(3){
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: btn3 1s linear infinite;
+  animation-delay: .45s;
+}
+@keyframes btn3{
+  0%{
+      right: -100%;
+  }
+  50%,
+  100%{
+      right: 100%;
+  }
+}
+.btn span:nth-child(4){
+  bottom: -100%;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(26deg, transparent, #03e9f4);
+  animation: btn4 1s linear infinite;
+  animation-delay: .70s;
+}
+@keyframes btn4{
+  0%{
+      bottom: -100%;
+  }
+  50%,
+  100%{
+      bottom: 100%;
+  }
+
+}
+
+

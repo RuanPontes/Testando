@@ -1,0 +1,30 @@
+<div class="container">
+  <section class="header">
+    <div class="account-info">
+      <img src="../../../../assets/icons/iconsUtils/Icondeposito.png" alt="Ícone Depósito" class="icon">
+      <h3 class="account-name">Depósito</h3>
+    </div>
+    <a class="back-button" onclick="history.back()">
+      <img src="../../../../../assets/icons/iconsUtils/voltar2.png" alt="Voltar" class="icon">
+    </a>
+  </section>
+
+  <form class="deposit-form" [formGroup]="formConta" (ngSubmit)="deposito()">
+    <div class="input-group">
+      <label>Agência da conta:</label>
+      <input type="text" class="form-control" formControlName="agencia">
+    </div>
+
+    <div class="input-group">
+      <label>Número da conta:</label>
+      <input type="text" class="form-control" formControlName="numeroConta">
+    </div>
+
+    <div class="input-group">
+      <label>Valor do Depósito:</label>
+      <input type="text" class="form-control" formControlName="valor">
+    </div>
+
+    <button [disabled]="!formConta.valid" type="submit" class="btn">Depositar</button>
+  </form>
+</div>

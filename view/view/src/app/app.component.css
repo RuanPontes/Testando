@@ -1,0 +1,7 @@
+.container {
+    width: 80%; /* Largura do container */
+    max-width: 1200px; /* Largura máxima do container */
+    margin: 0 auto; /* Centralizar o container na página */
+    padding: 20px; /* Espaçamento interno do container */
+    
+  }

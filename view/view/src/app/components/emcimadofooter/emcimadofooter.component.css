@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20190828/pngtree-vector-royal-blue-abstract-background-image_303102.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  }
+  
+  .styled-div {
+    width: 300px;
+    text-align: center;
+    position: relative;
+  }
+  
+  button {
+    margin-top: 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .text-container {
+    font-family: 'Nunito', sans-serif;
+    color: #ffffff;
+    white-space: nowrap; /* Evita quebrar a linha */
+  }
+  
+  .text-container h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .text-container p {
+    font-size: 16px;
+    margin: 0;
+  }
+  
+    
+  .apply-button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white; /* Contorno branco */
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px; /* Margem superior */
+    margin-right: 0; /* Sem margem à direita */
+    margin-bottom: 0; /* Sem margem inferior */
+    margin-left: 0; /* Sem margem à esquerda */
+  }
+  
+  
+  
+  .apply-button:hover {
+    background-color: #009a9c;
+  }

@@ -1,0 +1,9 @@
+    <app-header *ngIf="isHomePage()" ></app-header>
+    <app-home  *ngIf="isHomePage()"></app-home>
+    <app-sobre *ngIf="isHomePage()"></app-sobre>
+    <app-operacoes *ngIf="isHomePage()"></app-operacoes>
+    
+    <router-outlet></router-outlet>
+    <app-footer *ngIf="isHomePage()"></app-footer>
+    
+  

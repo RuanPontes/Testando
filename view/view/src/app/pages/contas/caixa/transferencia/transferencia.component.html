@@ -1,0 +1,48 @@
+<div class="container">
+  <section class="header">
+    <div class="header-content">
+      <img src="../../../../assets/icons/iconsUtils/transferenciaIcon.png" alt="Transferência Icon" class="icon" />
+      <h3 class="account-name">Transferência</h3>
+    </div>
+    <a class="back-button" onclick="history.back()">
+      <img src="../../../../../assets/icons/iconsUtils/voltar2.png" alt="Voltar Icon" />
+    </a>
+  </section>
+  <form [formGroup]="formTransfe" (ngSubmit)="transferir()" class="transfer-form">
+    <div class="account-info">
+      <div class="info-group">
+        <div class="input-group">
+          <span class="input-label">Agência de Origem:</span>
+          <input type="text" class="form-control" placeholder="Digite os 4 números da agência" formControlName="agenciaOrigem" />
+        </div>
+        <div class="input-group">
+          <span class="input-label">Agência de Destino:</span>
+          <input type="text" class="form-control" placeholder="Digite os 4 números da agência" formControlName="agenciaDestino" />
+        </div>
+      </div>
+      <div class="info-group">
+        <div class="input-group">
+          <span class="input-label">Conta de Origem:</span>
+          <input type="text" class="form-control" placeholder="Digite os 6 números da conta" formControlName="numeroContaOrigem" />
+        </div>
+        <div class="input-group">
+          <span class="input-label">Conta de Destino:</span>
+          <input type="text" class="form-control" placeholder="Digite os 6 números da conta" formControlName="numeroContaDestino" />
+        </div>
+      </div>
+    </div>
+    <div class="input-group value-info">
+      <span class="input-label">Valor da transferência:</span>
+      <input type="text" class="form-control" placeholder="Digite o valor aqui." formControlName="valor" />
+    </div>
+    <button [disabled]="!formTransfe.valid" type="submit" class="btn btn-success">
+      Transferir
+    </button>
+  </form>
+</div>
+
+
+
+
+
+

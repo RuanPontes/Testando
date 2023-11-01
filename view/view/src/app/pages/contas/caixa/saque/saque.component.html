@@ -1,0 +1,33 @@
+<div class="container">
+  <section class="header">
+    <div class="account-info">
+      <img src="../../../../assets/icons/iconsUtils/iconSaque.png" alt="Ícone Saque" class="icon">
+      <h3 class="account-name">Saque</h3>
+    </div>
+    <a class="back-button" onclick="history.back()">
+      <img src="../../../../../assets/icons/iconsUtils/voltar2.png" alt="Voltar" class="icon">
+    </a>
+  </section>
+
+  <form class="withdraw-form" [formGroup]="formSaque" (ngSubmit)="saque()">
+    <div class="input-group">
+      <label for="agencia">Agência da conta:</label>
+      <input type="text" id="agencia" class="form-control" formControlName="agencia" [value]="(clienteConta$ | async)?.agencia">
+    </div>
+    
+    <div class="input-group">
+      <label for="numeroConta">Número da conta:</label>
+      <input type="text" id="numeroConta" class="form-control" formControlName="numeroConta" [value]="(clienteConta$ | async)?.numero">
+    </div>  
+    <div class="input-group">
+      <label for="valor">Valor do Saque:</label>
+      <input type="text" id="valor" class="form-control" formControlName="valor">
+    </div>
+  
+    <button [disabled]="!formSaque.valid" type="submit" class="btn">Sacar</button>
+  </form>
+  
+  
+  
+
+</div>

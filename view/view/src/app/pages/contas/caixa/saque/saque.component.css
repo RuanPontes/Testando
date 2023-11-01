@@ -1,0 +1,80 @@
+.container {
+  margin: 10rem auto;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+  
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.account-info {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 40px;
+  height: 35px;
+  margin-right: 0.3rem;
+}
+
+.account-name {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+}
+
+.withdraw-form label {
+  color: rgb(0, 0, 0);
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.form-control {
+  margin-top: 0.3rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  transition: border-color 0.2s;
+  width: 100%;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+}
+
+.btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+  width: 100%;
+}
+
+.btn:hover {
+  background-color: #218838;
+}
